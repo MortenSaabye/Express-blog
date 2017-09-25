@@ -1,0 +1,35 @@
+<% include header %>
+<% if (posts.length) { %>
+   <% posts.forEach(post => { %>
+   <div class="list-group">
+      <div class="list-group-item flex-column align-items-start">
+         <div class="justify-content-between">
+            <h2><%= post.headline %></h2>
+         </div>
+         <p><%= post.message %></p>
+         <small><%= post.username %></small>
+         <h3>Comments:</h3>
+         <hr>
+         <% if (post.comments.length) { %>
+            <% post.comments.forEach(comment => { %>
+               <small><%= comment.username %></small>
+               <p><%= comment.comment %></p>
+               <hr>
+            <% }) %>
+         <% } %>
+         <form method="post" action="/post-comment" role="form">
+            <div class="form-group">
+               <label for="comment">Add a comment:</label>
+               <textarea class="form-control" id="comment" name="comment" placeholder="Write a comment" rows="3" required></textarea>
+            </div>
+            <input type="hidden" name="postId" value="<%= post.id %>">
+            <div class="form-group">
+               <input type="submit" value="Add comment" class="btn btn-primary">
+            </div>
+         </form>
+      </div>
+   </div>
+   <% }) %>
+<% } %>
+
+<% include footer %>

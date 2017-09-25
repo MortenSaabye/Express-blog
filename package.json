@@ -1,0 +1,27 @@
+{
+  "name": "express-blog",
+  "version": "1.0.0",
+  "description": "First mandatory for the frameworks course",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MortenSaabye/Express-blog.git"
+  },
+  "author": "Morten Saabye Kristensen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MortenSaabye/Express-blog/issues"
+  },
+  "homepage": "https://github.com/MortenSaabye/Express-blog#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.15.5",
+    "express-session": "^1.15.5",
+    "morgan": "^1.8.2",
+    "session-memory-store": "^0.2.2"
+  }
+}
