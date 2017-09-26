@@ -1,4 +1,5 @@
 <% include header %>
+<h1>Posts by you</h1>
 <% if (posts.length) { %>
    <% posts.forEach(post => { %>
    <div class="list-group">
@@ -17,16 +18,6 @@
                <hr>
             <% }) %>
          <% } %>
-         <form method="post" role="form">
-            <div class="form-group">
-               <label for="comment">Add a comment:</label>
-               <textarea class="form-control" id="comment" name="comment" placeholder="Write a comment" rows="3" required></textarea>
-            </div>
-            <input type="hidden" name="postId" value="<%= post.id %>">
-            <div class="form-group">
-               <input type="submit" value="Add comment" class="btn btn-primary">
-            </div>
-         </form>
       </div>
    </div>
    <% }) %>

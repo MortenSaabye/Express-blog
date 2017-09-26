@@ -9,41 +9,6 @@
         "username": "Bern-man",
         "commentId": 1,
         "comment": "This is bullshit"
-      },
-      {
-        "username": "morten",
-        "commentId": 1506344578385,
-        "comment": "hello1\r\n"
-      },
-      {
-        "username": "Morten",
-        "commentId": 1506345074234,
-        "comment": "asd"
-      },
-      {
-        "username": "Morten",
-        "commentId": 1506345288761,
-        "comment": "asd"
-      },
-      {
-        "username": "Morten",
-        "commentId": 1506345337838,
-        "comment": "asd"
-      },
-      {
-        "username": "Morten",
-        "commentId": 1506345337868,
-        "comment": "asd"
-      },
-      {
-        "username": "Morten",
-        "commentId": 1506345341667,
-        "comment": "asd"
-      },
-      {
-        "username": "Morten",
-        "commentId": 1506345346514,
-        "comment": "asd"
       }
     ]
   },
@@ -59,6 +24,26 @@
     "id": 1506336340867,
     "headline": "New",
     "message": "message",
+    "comments": []
+  },
+  {
+    "username": "Morten",
+    "id": 1506422362972,
+    "headline": "Hello!",
+    "message": "New post by the user Morten!",
+    "comments": [
+      {
+        "username": "Morten",
+        "commentId": 1506422534608,
+        "comment": "This is a comment, also by me!"
+      }
+    ]
+  },
+  {
+    "username": "Morten",
+    "id": 1506422559416,
+    "headline": "Yay! i'm done!",
+    "message": "This has been fun!",
     "comments": []
   }
 ]
